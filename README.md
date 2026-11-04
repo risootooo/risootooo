@@ -10,8 +10,8 @@ Most student portfolios show toy models on toy data. This one is built the other
 
 ## Currently
 
-- **Building:** Finance Services Portfolio — client-deliverable showcases (SaaS investor model, model audit & rescue) shaped by live freelance-market research
-- **Latest shipped:** StochVol Lab — Heston & SABR calibrated to the real NIFTY smile, with a Feller-condition audit
+- **Daily:** DSA problem-solving (52 problems and counting) plus a rotating improvement pass across the existing repos — no new repos, deeper ones
+- **Latest shipped:** Finance Services Portfolio — client-deliverable showcases (SaaS investor model, model audit & rescue) shaped by live freelance-market research
 - **Studying:** CFA Level 1 — quantitative methods and derivatives
 
 ---
@@ -51,7 +51,7 @@ Monte Carlo permutation tests · **deflated Sharpe ratio** (Bailey & López de P
 *Multi-model AI deliberation for research questions*
 Independent answers → anonymised Borda peer ranking → chairman synthesis with dissent preserved on record · cost/latency accounting · offline demo, no API key · original code, concept credited to Karpathy's llm-council
 
-**In build now:** *Finance Services Portfolio* — client-deliverable showcases shaped by live Fiverr/Upwork demand research (investor-ready SaaS model, model audit & rescue)
+**Daily discipline:** two new DSA problems and one verified improvement to an existing repo, committed every day — depth over breadth
 
 ---
 
