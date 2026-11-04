@@ -10,8 +10,8 @@ Most student portfolios show toy models on toy data. This one is built the other
 
 ## Currently
 
-- **Building:** Exotics & Structured Products Lab (barriers, Asians, autocallables — Monte Carlo vs finite-difference PDE)
-- **Latest shipped:** Hedge Lab — delta-hedging and Greeks P&L attribution on real option chains (unhedged −₹139,912 → daily-hedged +₹32,183)
+- **Building:** Rates Lab — yield-curve bootstrapping, interest-rate swaps and swaptions on real rate data
+- **Latest shipped:** Exotics & Structured Products Lab — barrier/Asian/autocallable pricing, MC vs PDE cross-checked, calibrated to the real NIFTY chain
 - **Studying:** CFA Level 1 — quantitative methods and derivatives
 
 ---
@@ -30,19 +30,23 @@ Black-Scholes / binomial / Monte Carlo pricers (agree to ±0.25 on a 400k-path c
 *Can you run the book day to day — and explain every rupee of its P&L?*
 A short-vol NIFTY book held across **10 consecutive real option chains** · three hedging regimes (unhedged **−₹139,912** / daily delta hedge **+₹32,183** / tolerance band +₹23,998) · **Greeks P&L attribution that sums to actual P&L**: theta +₹93,302, gamma −₹73,102, vega −₹55,080, net delta exactly ₹0 · the worst hedged day was a *vega* day, not a spot day — delta hedging can't fix it, and the attribution proves it · **28 tests**
 
-### 4 · VALIDATE — [EdgeGate](https://github.com/risootooo/edgegate) ⭐ flagship
+### 4 · STRUCTURE — [Exotics & Structured Products Lab](https://github.com/risootooo/exotics-lab)
+*What does a structuring desk actually sell — and where is its margin?*
+Barrier / Asian / lookback / cliquet options priced by Monte Carlo **and** an independent Crank–Nicolson PDE (max disagreement 0.026 vol points) · a 3-year NIFTY **autocallable**: fair coupon **7.11% p.a.**, P(autocall in year 1) 79.4%, and at a typical marketed 6.11% the note is worth 99.29 — the **0.71-point issuer margin**, decomposed leg by leg · barrier delta flips sign approaching the barrier (+0.10 → −0.18), measured by both engines · calibrated to the real 3 Nov 2026 chain · **29 tests**
+
+### 5 · VALIDATE — [EdgeGate](https://github.com/risootooo/edgegate) ⭐ flagship
 *Is this backtest lying?*
 Monte Carlo permutation tests · **deflated Sharpe ratio** (Bailey & López de Prado) · walk-forward consistency · bootstrap drawdowns · 1×/2×/3× cost stress · hard PASS / FAIL / UNPROVEN verdicts — a PF 1.93 curve-fit mirage **fails**, a modest 1,500-trade edge **passes**, the same edge at 600 trades is honestly **UNPROVEN**
 
-### 5 · RISK — [VaR Engine Pro](https://github.com/risootooo/var-risk-engine)
+### 6 · RISK — [VaR Engine Pro](https://github.com/risootooo/var-risk-engine)
 *How much can we lose, and would Basel believe the number?*
 9 VaR/ES estimators · Basel backtesting suite (Kupiec, Christoffersen, traffic-light) · GARCH filtered historical simulation · EVT/GPD tails · stressed VaR · Euler component ES · figures cross-checked against an independent library
 
-### 6 · RESEARCH WORKFLOW — [Finance Council](https://github.com/risootooo/finance-council)
+### 7 · RESEARCH WORKFLOW — [Finance Council](https://github.com/risootooo/finance-council)
 *Multi-model AI deliberation for research questions*
 Independent answers → anonymised Borda peer ranking → chairman synthesis with dissent preserved on record · cost/latency accounting · offline demo, no API key · original code, concept credited to Karpathy's llm-council
 
-**In build now:** *Exotics & Structured Products Lab* (barriers, Asians, autocallables — MC + PDE, real-vol calibrated)
+**In build now:** *Rates Lab* (yield-curve bootstrapping, swaps and swaptions — the largest derivatives market of all)
 
 ---
 
@@ -52,6 +56,7 @@ Independent answers → anonymised Borda peer ranking → chairman synthesis wit
 |---|---|
 | An ATM straddle lost **₹9,695/lot (−28.5%) in 5 days while spot rallied +4.9%** | Real NSE premiums, 28 Oct – 3 Nov 2026 (GreeksLab) |
 | Daily delta hedging turned **−₹139,912 into +₹32,183**; theta +₹93,302 fought gamma −₹73,102 and vega −₹55,080 | Real chains, 21 Oct – 3 Nov 2026, attribution sums to actual P&L (Hedge Lab) |
+| A marketed autocall coupon of 6.11% leaves the note worth **99.29** — the fair coupon is **7.11%**, and the 0.71-pt gap is the issuer's margin | Real NIFTY calibration; MC vs PDE agree to 0.026 vol pts (Exotics Lab) |
 | The market prices Infosys for **9.4% growth**; it delivered **3.4%** | Reverse DCF on real financials (Valuation Lab) |
 | Yahoo's Infosys beta is **0.02** — using it fabricates +60% upside | Own 60-month regression: 0.80 (Valuation Lab) |
 | A bank's default 0.50 credit cut-off **loses money**; the cost-optimal 0.196 earns **+16,248 DM** | Real UCI credit data, AUC 0.786 (Credit Scorecard Pro) |
@@ -63,14 +68,14 @@ Independent answers → anonymised Borda peer ranking → chairman synthesis wit
 
 | Domain | Project | Core content |
 |---|---|---|
-| Derivatives | [GreeksLab](https://github.com/risootooo/greeks-lab) · [VolSurface Atlas](https://github.com/risootooo/vol-surface-atlas) · [Hedge Lab](https://github.com/risootooo/hedge-lab) | Pricing, Greeks, IV surfaces, GEX, SVI, PCA, delta-hedging, P&L attribution |
+| Derivatives | [GreeksLab](https://github.com/risootooo/greeks-lab) · [VolSurface Atlas](https://github.com/risootooo/vol-surface-atlas) · [Hedge Lab](https://github.com/risootooo/hedge-lab) · [Exotics Lab](https://github.com/risootooo/exotics-lab) | Pricing, Greeks, IV surfaces, GEX, SVI, PCA, delta-hedging, P&L attribution, exotics, autocallables, PDE methods |
 | Trading research | [EdgeGate](https://github.com/risootooo/edgegate) · [StatArb Lab](https://github.com/risootooo/stat-arb-lab) · [Factor Lab](https://github.com/risootooo/factor-lab) | Validation statistics, pairs, Kalman hedge ratios, cross-sectional factors with IC / Fama-MacBeth / Bonferroni zoo check — verdict on Indian data: 0 of 4 textbook factors survive |
 | Risk & credit | [VaR Engine Pro](https://github.com/risootooo/var-risk-engine) · [Credit Scorecard Pro](https://github.com/risootooo/credit-scorecard-pro) | VaR/ES, Basel backtests, WOE scorecards, fairness audit |
 | Portfolio & valuation | [Portfolio Optimizer Pro](https://github.com/risootooo/portfolio-optimizer) · [Valuation Lab](https://github.com/risootooo/valuation-lab) | HRP, risk parity, Black-Litterman, DCF, reverse DCF, comps |
 | AI systems | [Finance Council](https://github.com/risootooo/finance-council) | Multi-model deliberation, evaluation, cost accounting |
 | Engineering | [DSA — Python](https://github.com/risootooo/dsa-challenges-python) | 50 problems, pattern playbook, complexity notes, full test suite |
 
-**320+ automated tests across the public repos. Every project: self-contained offline dashboard, documented assumptions, stated limitations.**
+**350+ automated tests across the public repos. Every project: self-contained offline dashboard, documented assumptions, stated limitations.**
 
 ## How I work — the standards these repos are held to
 
