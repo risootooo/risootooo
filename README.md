@@ -10,8 +10,8 @@ Most student portfolios show toy models on toy data. This one is built the other
 
 ## Currently
 
-- **Building:** Stochastic Volatility Lab — Heston and SABR models calibrated to the real NIFTY smile, fit compared slice by slice
-- **Latest shipped:** Rates Lab — Treasury curve bootstrapping, swaps, swaptions and curve PCA on 710 real curves
+- **Building:** Finance Services Portfolio — client-deliverable showcases (SaaS investor model, model audit & rescue) shaped by live freelance-market research
+- **Latest shipped:** StochVol Lab — Heston & SABR calibrated to the real NIFTY smile, with a Feller-condition audit
 - **Studying:** CFA Level 1 — quantitative methods and derivatives
 
 ---
@@ -25,6 +25,7 @@ Black-Scholes / binomial / Monte Carlo pricers (agree to ±0.25 on a 400k-path c
 ### 2 · SURFACE — [VolSurface Atlas](https://github.com/risootooo/vol-surface-atlas)
 *How does implied volatility actually behave?*
 10,633 real IV points from **220 days of NSE bhavcopy** · SVI calibration across 69 slices (median RMSE 1.09 vol pts) · PCA of surface dynamics: **96.3% of daily change is one level shift** · real event studies — Mar 2026 crash (ATM IV 17.6% → 34.2%, term structure inverted) and the Apr 2026 vol crush (28.5% → 18.4% in one session)
+*Model layer — [StochVol Lab](https://github.com/risootooo/stochvol-lab):* Heston & SABR from scratch, calibrated to the real smile — Heston **fails the weekly expiry** (RMSE 5.83 vol pts; its skew is structurally too weak) and wins the monthly; **every unconstrained calibration violates the Feller condition**; after a −2% spot shock the models disagree on delta by **2.8 points**, so model choice is a hedging decision · 17 tests
 
 ### 3 · HEDGE — [Hedge Lab](https://github.com/risootooo/hedge-lab)
 *Can you run the book day to day — and explain every rupee of its P&L?*
@@ -50,7 +51,7 @@ Monte Carlo permutation tests · **deflated Sharpe ratio** (Bailey & López de P
 *Multi-model AI deliberation for research questions*
 Independent answers → anonymised Borda peer ranking → chairman synthesis with dissent preserved on record · cost/latency accounting · offline demo, no API key · original code, concept credited to Karpathy's llm-council
 
-**In build now:** *Stochastic Volatility Lab* (Heston and SABR calibrated to the real NIFTY smile)
+**In build now:** *Finance Services Portfolio* — client-deliverable showcases shaped by live Fiverr/Upwork demand research (investor-ready SaaS model, model audit & rescue)
 
 ---
 
@@ -73,14 +74,14 @@ Independent answers → anonymised Borda peer ranking → chairman synthesis wit
 
 | Domain | Project | Core content |
 |---|---|---|
-| Derivatives | [GreeksLab](https://github.com/risootooo/greeks-lab) · [VolSurface Atlas](https://github.com/risootooo/vol-surface-atlas) · [Hedge Lab](https://github.com/risootooo/hedge-lab) · [Exotics Lab](https://github.com/risootooo/exotics-lab) | Pricing, Greeks, IV surfaces, GEX, SVI, PCA, delta-hedging, P&L attribution, exotics, autocallables, PDE methods |
+| Derivatives | [GreeksLab](https://github.com/risootooo/greeks-lab) · [VolSurface Atlas](https://github.com/risootooo/vol-surface-atlas) · [StochVol Lab](https://github.com/risootooo/stochvol-lab) · [Hedge Lab](https://github.com/risootooo/hedge-lab) · [Exotics Lab](https://github.com/risootooo/exotics-lab) | Pricing, Greeks, IV surfaces, GEX, SVI, Heston/SABR calibration, PCA, delta-hedging, P&L attribution, exotics, autocallables, PDE methods |
 | Trading research | [EdgeGate](https://github.com/risootooo/edgegate) · [StatArb Lab](https://github.com/risootooo/stat-arb-lab) · [Factor Lab](https://github.com/risootooo/factor-lab) | Validation statistics, pairs, Kalman hedge ratios, cross-sectional factors with IC / Fama-MacBeth / Bonferroni zoo check — verdict on Indian data: 0 of 4 textbook factors survive |
 | Rates & credit | [Rates Lab](https://github.com/risootooo/rates-lab) · [VaR Engine Pro](https://github.com/risootooo/var-risk-engine) · [Credit Scorecard Pro](https://github.com/risootooo/credit-scorecard-pro) | Curve bootstrapping, swaps, swaptions, curve PCA, VaR/ES, Basel backtests, WOE scorecards, fairness audit |
 | Portfolio & valuation | [Portfolio Optimizer Pro](https://github.com/risootooo/portfolio-optimizer) · [Valuation Lab](https://github.com/risootooo/valuation-lab) | HRP, risk parity, Black-Litterman, DCF, reverse DCF, comps |
 | AI systems | [Finance Council](https://github.com/risootooo/finance-council) | Multi-model deliberation, evaluation, cost accounting |
 | Engineering | [DSA — Python](https://github.com/risootooo/dsa-challenges-python) | 50 problems, pattern playbook, complexity notes, full test suite |
 
-**370+ automated tests across the public repos. Every project: self-contained offline dashboard, documented assumptions, stated limitations.**
+**385+ automated tests across the public repos. Every project: self-contained offline dashboard, documented assumptions, stated limitations.**
 
 ## How I work — the standards these repos are held to
 
