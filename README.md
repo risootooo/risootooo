@@ -105,6 +105,10 @@ Independent answers → anonymised Borda peer ranking → chairman synthesis wit
 **Quant & risk:** VaR/ES & Basel backtesting · GARCH · EVT · cointegration & Kalman filtering · deflated Sharpe / multiple-testing control · factor & PCA methods
 **Finance:** DCF & reverse DCF · trading comparables · credit scorecards (WOE/IV) · portfolio construction (HRP, Black-Litterman)
 
+## For clients — [Finance Services Portfolio](https://github.com/risootooo/finance-services-portfolio)
+
+The same skills, packaged as deliverables (service lines shaped by live Fiverr/Upwork demand research): investor-ready startup/SaaS models · FP&A and 13-week cash-flow systems · **model audit & rescue** · trading/options analytics tooling (code and research — your rules, coded; no advice, no signals) · equity-research packs. The portfolio shows real sample deliverables, including a broken model whose value was overstated **113%** — every error found, quantified and fixed.
+
 ## Connect
 
 - LinkedIn: [samrat-banerjee-919a45447](https://www.linkedin.com/in/samrat-banerjee-919a45447/)
