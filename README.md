@@ -10,8 +10,8 @@ Most student portfolios show toy models on toy data. This one is built the other
 
 ## Currently
 
-- **Building:** Exotics & Structured Products Lab (barriers, Asians, autocallables — Monte Carlo vs finite-difference PDE) and Hedge Lab (delta-hedging + Greeks P&L attribution on real option chains)
-- **Latest shipped:** Factor Lab — a Bonferroni-corrected factor-zoo verdict on 10 years of NIFTY 50 data (0 of 4 textbook factors survive; the null result is the result)
+- **Building:** Exotics & Structured Products Lab (barriers, Asians, autocallables — Monte Carlo vs finite-difference PDE)
+- **Latest shipped:** Hedge Lab — delta-hedging and Greeks P&L attribution on real option chains (unhedged −₹139,912 → daily-hedged +₹32,183)
 - **Studying:** CFA Level 1 — quantitative methods and derivatives
 
 ---
@@ -26,19 +26,23 @@ Black-Scholes / binomial / Monte Carlo pricers (agree to ±0.25 on a 400k-path c
 *How does implied volatility actually behave?*
 10,633 real IV points from **220 days of NSE bhavcopy** · SVI calibration across 69 slices (median RMSE 1.09 vol pts) · PCA of surface dynamics: **96.3% of daily change is one level shift** · real event studies — Mar 2026 crash (ATM IV 17.6% → 34.2%, term structure inverted) and the Apr 2026 vol crush (28.5% → 18.4% in one session)
 
-### 3 · VALIDATE — [EdgeGate](https://github.com/risootooo/edgegate) ⭐ flagship
+### 3 · HEDGE — [Hedge Lab](https://github.com/risootooo/hedge-lab)
+*Can you run the book day to day — and explain every rupee of its P&L?*
+A short-vol NIFTY book held across **10 consecutive real option chains** · three hedging regimes (unhedged **−₹139,912** / daily delta hedge **+₹32,183** / tolerance band +₹23,998) · **Greeks P&L attribution that sums to actual P&L**: theta +₹93,302, gamma −₹73,102, vega −₹55,080, net delta exactly ₹0 · the worst hedged day was a *vega* day, not a spot day — delta hedging can't fix it, and the attribution proves it · **28 tests**
+
+### 4 · VALIDATE — [EdgeGate](https://github.com/risootooo/edgegate) ⭐ flagship
 *Is this backtest lying?*
 Monte Carlo permutation tests · **deflated Sharpe ratio** (Bailey & López de Prado) · walk-forward consistency · bootstrap drawdowns · 1×/2×/3× cost stress · hard PASS / FAIL / UNPROVEN verdicts — a PF 1.93 curve-fit mirage **fails**, a modest 1,500-trade edge **passes**, the same edge at 600 trades is honestly **UNPROVEN**
 
-### 4 · RISK — [VaR Engine Pro](https://github.com/risootooo/var-risk-engine)
+### 5 · RISK — [VaR Engine Pro](https://github.com/risootooo/var-risk-engine)
 *How much can we lose, and would Basel believe the number?*
 9 VaR/ES estimators · Basel backtesting suite (Kupiec, Christoffersen, traffic-light) · GARCH filtered historical simulation · EVT/GPD tails · stressed VaR · Euler component ES · figures cross-checked against an independent library
 
-### 5 · RESEARCH WORKFLOW — [Finance Council](https://github.com/risootooo/finance-council)
+### 6 · RESEARCH WORKFLOW — [Finance Council](https://github.com/risootooo/finance-council)
 *Multi-model AI deliberation for research questions*
 Independent answers → anonymised Borda peer ranking → chairman synthesis with dissent preserved on record · cost/latency accounting · offline demo, no API key · original code, concept credited to Karpathy's llm-council
 
-**In build now:** *Exotics & Structured Products Lab* (barriers, Asians, autocallables — MC + PDE, real-vol calibrated) · *Hedge Lab* (delta-hedging simulation and Greeks P&L attribution on real consecutive option chains)
+**In build now:** *Exotics & Structured Products Lab* (barriers, Asians, autocallables — MC + PDE, real-vol calibrated)
 
 ---
 
@@ -47,6 +51,7 @@ Independent answers → anonymised Borda peer ranking → chairman synthesis wit
 | Finding | Evidence |
 |---|---|
 | An ATM straddle lost **₹9,695/lot (−28.5%) in 5 days while spot rallied +4.9%** | Real NSE premiums, 28 Oct – 3 Nov 2026 (GreeksLab) |
+| Daily delta hedging turned **−₹139,912 into +₹32,183**; theta +₹93,302 fought gamma −₹73,102 and vega −₹55,080 | Real chains, 21 Oct – 3 Nov 2026, attribution sums to actual P&L (Hedge Lab) |
 | The market prices Infosys for **9.4% growth**; it delivered **3.4%** | Reverse DCF on real financials (Valuation Lab) |
 | Yahoo's Infosys beta is **0.02** — using it fabricates +60% upside | Own 60-month regression: 0.80 (Valuation Lab) |
 | A bank's default 0.50 credit cut-off **loses money**; the cost-optimal 0.196 earns **+16,248 DM** | Real UCI credit data, AUC 0.786 (Credit Scorecard Pro) |
@@ -58,14 +63,14 @@ Independent answers → anonymised Borda peer ranking → chairman synthesis wit
 
 | Domain | Project | Core content |
 |---|---|---|
-| Derivatives | [GreeksLab](https://github.com/risootooo/greeks-lab) · [VolSurface Atlas](https://github.com/risootooo/vol-surface-atlas) | Pricing, Greeks, IV surfaces, GEX, SVI, PCA |
+| Derivatives | [GreeksLab](https://github.com/risootooo/greeks-lab) · [VolSurface Atlas](https://github.com/risootooo/vol-surface-atlas) · [Hedge Lab](https://github.com/risootooo/hedge-lab) | Pricing, Greeks, IV surfaces, GEX, SVI, PCA, delta-hedging, P&L attribution |
 | Trading research | [EdgeGate](https://github.com/risootooo/edgegate) · [StatArb Lab](https://github.com/risootooo/stat-arb-lab) · [Factor Lab](https://github.com/risootooo/factor-lab) | Validation statistics, pairs, Kalman hedge ratios, cross-sectional factors with IC / Fama-MacBeth / Bonferroni zoo check — verdict on Indian data: 0 of 4 textbook factors survive |
 | Risk & credit | [VaR Engine Pro](https://github.com/risootooo/var-risk-engine) · [Credit Scorecard Pro](https://github.com/risootooo/credit-scorecard-pro) | VaR/ES, Basel backtests, WOE scorecards, fairness audit |
 | Portfolio & valuation | [Portfolio Optimizer Pro](https://github.com/risootooo/portfolio-optimizer) · [Valuation Lab](https://github.com/risootooo/valuation-lab) | HRP, risk parity, Black-Litterman, DCF, reverse DCF, comps |
 | AI systems | [Finance Council](https://github.com/risootooo/finance-council) | Multi-model deliberation, evaluation, cost accounting |
 | Engineering | [DSA — Python](https://github.com/risootooo/dsa-challenges-python) | 50 problems, pattern playbook, complexity notes, full test suite |
 
-**290+ automated tests across the public repos. Every project: self-contained offline dashboard, documented assumptions, stated limitations.**
+**320+ automated tests across the public repos. Every project: self-contained offline dashboard, documented assumptions, stated limitations.**
 
 ## How I work — the standards these repos are held to
 
