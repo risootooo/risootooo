@@ -8,6 +8,12 @@ MBA (Financial Management), University of Calcutta · BCA (Hons), Techno India U
 
 Most student portfolios show toy models on toy data. This one is built the other way: **real NSE exchange files, real company financials, real credit data** — and every headline number below is reproduced by the code and its test suite before it is printed here. Where a model fails, the failure is the case study.
 
+## Currently
+
+- **Building:** Exotics & Structured Products Lab (barriers, Asians, autocallables — Monte Carlo vs finite-difference PDE) and Hedge Lab (delta-hedging + Greeks P&L attribution on real option chains)
+- **Latest shipped:** Factor Lab — a Bonferroni-corrected factor-zoo verdict on 10 years of NIFTY 50 data (0 of 4 textbook factors survive; the null result is the result)
+- **Studying:** CFA Level 1 — quantitative methods and derivatives
+
 ---
 
 ## The Derivatives Stack — organised the way a desk actually works
@@ -87,5 +93,7 @@ Independent answers → anonymised Borda peer ranking → chairman synthesis wit
 
 - LinkedIn: [samrat-banerjee-919a45447](https://www.linkedin.com/in/samrat-banerjee-919a45447/)
 - GitHub: [github.com/risootooo](https://github.com/risootooo)
+
+![Samrat's GitHub stats](https://github-readme-stats.vercel.app/api?username=risootooo&show_icons=true&theme=github_dark&hide_border=true)
 
 *All projects are research and educational work — nothing here is investment advice, and no result is a promise of trading performance.*
