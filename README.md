@@ -12,6 +12,7 @@ I build research-grade financial systems in Python — market risk engines, port
 
 | Project | What it does | Highlights |
 |---|---|---|
+| **[EdgeGate](https://github.com/risootooo/edgegate)** ⭐ flagship | Strategy-validation lab — "your backtest is lying to you" | Monte Carlo permutation tests · deflated Sharpe ratio · walk-forward consistency · bootstrap drawdowns · 1x/2x/3x cost stress · hard PASS / FAIL / UNPROVEN verdict · demo: a PF 1.93 curve-fit mirage FAILS, a modest real edge PASSES · self-contained HTML report |
 | **[VaR Engine Pro](https://github.com/risootooo/var-risk-engine)** | Multi-method market-risk engine | 9 VaR/ES estimators · Basel backtesting (Kupiec, Christoffersen, traffic-light) · GARCH filtered historical simulation · EVT/GPD tails · stressed VaR · Euler component ES · Streamlit + Plotly dashboard · cross-checked against Riskfolio-Lib |
 | **[Portfolio Optimizer](https://github.com/risootooo/portfolio-optimizer)** | Institutional-style portfolio construction toolkit | Mean-variance, HRP, risk parity & Black-Litterman allocation · Ledoit-Wolf covariance shrinkage · walk-forward backtests (Sharpe, Sortino, Calmar, max drawdown) · efficient frontier · Monte Carlo · interactive dashboard |
 | **[DSA — Python](https://github.com/risootooo/dsa-challenges-python)** | Data structures & algorithms practice portfolio | 50 problems across 15+ patterns · Dijkstra, Union-Find, Trie, advanced DP · pattern playbook + complexity cheat sheet · full pytest suite |
