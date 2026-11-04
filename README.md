@@ -53,13 +53,13 @@ Independent answers → anonymised Borda peer ranking → chairman synthesis wit
 | Domain | Project | Core content |
 |---|---|---|
 | Derivatives | [GreeksLab](https://github.com/risootooo/greeks-lab) · [VolSurface Atlas](https://github.com/risootooo/vol-surface-atlas) | Pricing, Greeks, IV surfaces, GEX, SVI, PCA |
-| Trading research | [EdgeGate](https://github.com/risootooo/edgegate) · [StatArb Lab](https://github.com/risootooo/stat-arb-lab) | Validation statistics, pairs, Kalman hedge ratios, momentum |
+| Trading research | [EdgeGate](https://github.com/risootooo/edgegate) · [StatArb Lab](https://github.com/risootooo/stat-arb-lab) · [Factor Lab](https://github.com/risootooo/factor-lab) | Validation statistics, pairs, Kalman hedge ratios, cross-sectional factors with IC / Fama-MacBeth / Bonferroni zoo check — verdict on Indian data: 0 of 4 textbook factors survive |
 | Risk & credit | [VaR Engine Pro](https://github.com/risootooo/var-risk-engine) · [Credit Scorecard Pro](https://github.com/risootooo/credit-scorecard-pro) | VaR/ES, Basel backtests, WOE scorecards, fairness audit |
 | Portfolio & valuation | [Portfolio Optimizer Pro](https://github.com/risootooo/portfolio-optimizer) · [Valuation Lab](https://github.com/risootooo/valuation-lab) | HRP, risk parity, Black-Litterman, DCF, reverse DCF, comps |
 | AI systems | [Finance Council](https://github.com/risootooo/finance-council) | Multi-model deliberation, evaluation, cost accounting |
 | Engineering | [DSA — Python](https://github.com/risootooo/dsa-challenges-python) | 50 problems, pattern playbook, complexity notes, full test suite |
 
-**260+ automated tests across the public repos. Every project: self-contained offline dashboard, documented assumptions, stated limitations.**
+**290+ automated tests across the public repos. Every project: self-contained offline dashboard, documented assumptions, stated limitations.**
 
 ## How I work — the standards these repos are held to
 
