@@ -1,17 +1,44 @@
-# Samrat Banerjee
+# Hi, I'm Samrat Banerjee
 
-Finance + code. MBA (Financial Management) candidate, University of Calcutta · BCA (Hons), Techno India University · CFA Level 1 candidate.
+**Quantitative finance × Python engineering**
 
-I build quantitative finance tools in Python — market risk, portfolio analytics — and keep a disciplined DSA practice repo alongside.
+MBA (Financial Management) candidate, University of Calcutta · BCA (Hons), Techno India University · CFA Level 1 candidate
+
+I build research-grade financial systems in Python — market risk engines, portfolio analytics and backtesting frameworks — engineered to a standard a model-validation team would accept: real data, honest out-of-sample testing, cross-checked results, and tests that can fail for the right reason.
+
+---
 
 ## Featured projects
 
-- **[VaR Engine Pro](https://github.com/risootooo/var-risk-engine)** — Multi-method VaR/ES market-risk engine: 9 estimators, Basel backtesting (Kupiec, Christoffersen, traffic-light), stressed VaR, GARCH filtered historical simulation, EVT/GPD tails, Euler component ES. Streamlit app + interactive Plotly dashboard.
-- **[Portfolio Optimizer](https://github.com/risootooo/portfolio-optimizer)** — Modern Portfolio Theory toolkit: efficient frontier, maximum-Sharpe and minimum-volatility portfolios, Monte Carlo simulation. Runs fully offline on seeded synthetic data, with a full test suite.
-- **[DSA Challenges — Python](https://github.com/risootooo/dsa-challenges-python)** — 30 Python solutions organised by topic (arrays, hashmaps, two pointers, sliding window, binary search, stack, linked list, trees, graphs, heap, dynamic programming), each with approach, complexity analysis and pytest tests.
+| Project | What it does | Highlights |
+|---|---|---|
+| **[VaR Engine Pro](https://github.com/risootooo/var-risk-engine)** | Multi-method market-risk engine | 9 VaR/ES estimators · Basel backtesting (Kupiec, Christoffersen, traffic-light) · GARCH filtered historical simulation · EVT/GPD tails · stressed VaR · Euler component ES · Streamlit + Plotly dashboard · cross-checked against Riskfolio-Lib |
+| **[Portfolio Optimizer](https://github.com/risootooo/portfolio-optimizer)** | Institutional-style portfolio construction toolkit | Mean-variance, HRP, risk parity & Black-Litterman allocation · Ledoit-Wolf covariance shrinkage · walk-forward backtests (Sharpe, Sortino, Calmar, max drawdown) · efficient frontier · Monte Carlo · interactive dashboard |
+| **[DSA — Python](https://github.com/risootooo/dsa-challenges-python)** | Data structures & algorithms practice portfolio | 50 problems across 15+ patterns · Dijkstra, Union-Find, Trie, advanced DP · pattern playbook + complexity cheat sheet · full pytest suite |
 
-## Focus areas
+## Engineering standards I hold these to
 
-Quantitative risk · Portfolio analytics · Financial modelling · Python for finance · Data structures & algorithms
+- **Verified, not claimed** — every headline number is produced by the code in the repo and reproduced by its test suite
+- **Out-of-sample honesty** — backtests report where models fail, not only where they shine
+- **Cross-verification** — risk figures checked against an independent library implementation
+- **Runnable offline** — demos and dashboards work without a server or API keys
 
-*Educational projects only — nothing here is investment advice.*
+## Tech stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?logo=pytest&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+
+**Finance:** Value-at-Risk & Expected Shortfall · Basel / FRTB backtesting · GARCH volatility · Portfolio theory (MPT, HRP, Black-Litterman) · Credit risk · Financial modelling
+
+## Connect
+
+- LinkedIn: [samrat-banerjee-919a45447](https://www.linkedin.com/in/samrat-banerjee-919a45447/)
+- GitHub: [github.com/risootooo](https://github.com/risootooo)
+
+*All projects are educational / research work — nothing here is investment advice.*
