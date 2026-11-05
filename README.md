@@ -115,5 +115,6 @@ The same skills, packaged as deliverables (service lines shaped by live Fiverr/U
 - GitHub: [github.com/risootooo](https://github.com/risootooo)
 
 ![Samrat's GitHub stats](https://github-readme-stats.vercel.app/api?username=risootooo&show_icons=true&theme=github_dark&hide_border=true)
+![Contribution streak](https://streak-stats.demolab.com?user=risootooo&theme=github-dark-blue&hide_border=true)
 
 *All projects are research and educational work — nothing here is investment advice, and no result is a promise of trading performance.*
