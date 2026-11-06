@@ -5,12 +5,17 @@
 **Target roles:** Derivatives Analyst · Options / Flow Trading · Quantitative Research · Market & Model Risk
 
 MBA (Financial Management), University of Calcutta · BCA (Hons), Techno India University · CFA Level 1 candidate
+**Founder:** Elixer Touch Capitals LLC (US) — the proprietary research practice behind this work
+
+![Open to roles](https://img.shields.io/badge/Open%20to-Derivatives%20%C2%B7%20Quant%20Research%20%C2%B7%20Market%20Risk-brightgreen)
+
+**Start here (60 seconds):** [EdgeGate](https://github.com/risootooo/edgegate) ⭐ the flagship — a backtest lie detector · [Greeks Lab](https://github.com/risootooo/greeks-lab) — pricing & dealer gamma on real data · [Hedge Lab](https://github.com/risootooo/hedge-lab) — a real options book, hedged and attributed to the rupee
 
 Most student portfolios show toy models on toy data. This one is built the other way: **real NSE exchange files, real company financials, real credit data** — and every headline number below is reproduced by the code and its test suite before it is printed here. Where a model fails, the failure is the case study.
 
 ## Currently
 
-- **Daily:** DSA problem-solving (52 problems and counting) plus a rotating improvement pass across the existing repos — no new repos, deeper ones
+- **Daily:** DSA problem-solving (60 problems and counting) plus a rotating improvement pass across the existing repos — no new repos, deeper ones
 - **Latest shipped:** Finance Services Portfolio — client-deliverable showcases (SaaS investor model, model audit & rescue) shaped by live freelance-market research
 - **Studying:** CFA Level 1 — quantitative methods and derivatives
 
@@ -112,9 +117,11 @@ The same skills, packaged as deliverables (service lines shaped by live Fiverr/U
 ## Connect
 
 - LinkedIn: [samrat-banerjee-919a45447](https://www.linkedin.com/in/samrat-banerjee-919a45447/)
+- Email: vrammojitbanerjee@gmail.com
 - GitHub: [github.com/risootooo](https://github.com/risootooo)
 
 ![Samrat's GitHub stats](https://github-readme-stats.vercel.app/api?username=risootooo&show_icons=true&theme=github_dark&hide_border=true)
 ![Contribution streak](https://streak-stats.demolab.com?user=risootooo&theme=github-dark-blue&hide_border=true)
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=risootooo&layout=compact&theme=github_dark&hide_border=true)
 
 *All projects are research and educational work — nothing here is investment advice, and no result is a promise of trading performance.*
