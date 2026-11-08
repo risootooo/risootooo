@@ -79,14 +79,14 @@ Independent answers → anonymised Borda peer ranking → chairman synthesis wit
 
 | Domain | Project | Core content |
 |---|---|---|
-| Derivatives | [GreeksLab](https://github.com/risootooo/greeks-lab) · [VolSurface Atlas](https://github.com/risootooo/vol-surface-atlas) · [StochVol Lab](https://github.com/risootooo/stochvol-lab) · [Hedge Lab](https://github.com/risootooo/hedge-lab) · [Exotics Lab](https://github.com/risootooo/exotics-lab) | Pricing, Greeks, IV surfaces, GEX, SVI, Heston/SABR calibration, PCA, delta-hedging, P&L attribution, exotics, autocallables, PDE methods |
+| Derivatives | [GreeksLab](https://github.com/risootooo/greeks-lab) · [VolSurface Atlas](https://github.com/risootooo/vol-surface-atlas) · [StochVol Lab](https://github.com/risootooo/stochvol-lab) · [Hedge Lab](https://github.com/risootooo/hedge-lab) · [Exotics Lab](https://github.com/risootooo/exotics-lab) · [Textbook Quant Models](https://github.com/risootooo/textbook-quant-models) | Pricing, Greeks, IV surfaces, GEX, SVI, Heston/SABR calibration, PCA, delta-hedging, P&L attribution, exotics, autocallables, PDE methods — plus the textbook layer from scratch: Merton jump-diffusion, Hamilton regimes, GARCH tournament, credit copulas, Vasicek/CIR |
 | Trading research | [EdgeGate](https://github.com/risootooo/edgegate) · [StatArb Lab](https://github.com/risootooo/stat-arb-lab) · [Factor Lab](https://github.com/risootooo/factor-lab) | Validation statistics, pairs, Kalman hedge ratios, cross-sectional factors with IC / Fama-MacBeth / Bonferroni zoo check — verdict on Indian data: 0 of 4 textbook factors survive |
 | Rates & credit | [Rates Lab](https://github.com/risootooo/rates-lab) · [VaR Engine Pro](https://github.com/risootooo/var-risk-engine) · [Credit Scorecard Pro](https://github.com/risootooo/credit-scorecard-pro) | Curve bootstrapping, swaps, swaptions, curve PCA, VaR/ES, Basel backtests, WOE scorecards, fairness audit |
 | Portfolio & valuation | [Portfolio Optimizer Pro](https://github.com/risootooo/portfolio-optimizer) · [Valuation Lab](https://github.com/risootooo/valuation-lab) | HRP, risk parity, Black-Litterman, DCF, reverse DCF, comps |
 | AI systems | [Finance Council](https://github.com/risootooo/finance-council) | Multi-model deliberation, evaluation, cost accounting |
-| Engineering | [DSA — Python](https://github.com/risootooo/dsa-challenges-python) | 50 problems, pattern playbook, complexity notes, full test suite |
+| Engineering | [DSA — Python](https://github.com/risootooo/dsa-challenges-python) | 62 problems, pattern playbook, complexity notes, full test suite |
 
-**385+ automated tests across the public repos. Every project: self-contained offline dashboard, documented assumptions, stated limitations.**
+**450+ automated tests across the public repos. Every project: documented assumptions, stated limitations, real data or labelled synthetic.**
 
 ## How I work — the standards these repos are held to
 
