@@ -4,9 +4,6 @@
 
 **Target roles:** Derivatives Analyst · Options / Flow Trading · Quantitative Research · Market & Model Risk
 
-MBA (Financial Management), University of Calcutta · BCA (Hons), Techno India University · CFA Level 1 candidate
-**Founder:** Elixer Touch Capitals LLC (US) — the proprietary research practice behind this work
-
 ![Open to roles](https://img.shields.io/badge/Open%20to-Derivatives%20%C2%B7%20Quant%20Research%20%C2%B7%20Market%20Risk-brightgreen)
 
 **Start here (60 seconds):** [EdgeGate](https://github.com/risootooo/edgegate) ⭐ the flagship — a backtest lie detector · [Greeks Lab](https://github.com/risootooo/greeks-lab) — pricing & dealer gamma on real data · [Hedge Lab](https://github.com/risootooo/hedge-lab) — a real options book, hedged and attributed to the rupee
